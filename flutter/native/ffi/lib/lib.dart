@@ -1,13 +1,11 @@
-import 'dart:async';
 import 'dart:convert';
 import 'dart:ffi';
-import 'dart:isolate';
-import 'package:avelio_sdk/gen/proto/general.pb.dart';
-import 'package:avelio_sdk/gen/proto/track.pb.dart';
 import 'package:ffi/ffi.dart';
 
-import './gen/ffi.dart' as native;
-import 'gen/proto/auth.pb.dart';
+import 'package:avelio_sdk/gen/proto/general.pb.dart';
+import 'package:avelio_sdk/gen/proto/track.pb.dart';
+import 'package:avelio_sdk/gen/proto/auth.pb.dart';
+import 'package:avelio_sdk/gen/ffi.dart' as native;
 
 class NativeRust {
   late final native.NativeLibrary dll;
