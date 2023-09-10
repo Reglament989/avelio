@@ -1,0 +1,11 @@
+syntax = "proto3";
+package avelio.track;
+
+import "proto/general.proto";
+
+message GetSongInfoResponse {
+  string id = 1;
+  avelio.general.Song song = 2;
+}
+
+message SongRepository { repeated avelio.general.Song songs = 1; }

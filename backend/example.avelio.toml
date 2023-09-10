@@ -1,0 +1,15 @@
+[server]
+jwt_key = "71f5412e318a41b6b442c9717f1dfe15fd8b3868ada0d7fb" # openssl rand -hex 24
+registration = true
+
+[database]
+url = "postgres://postgres@localhost/avelio"
+
+[music]
+genius_access_token = ""
+
+[s3]
+access_key = ""
+secret_key = ""
+default_bucket = ""
+endpoint = ""

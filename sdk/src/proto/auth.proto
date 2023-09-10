@@ -1,0 +1,14 @@
+syntax = "proto3";
+package avelio.auth;
+
+message AuthorizateRequest {
+  string login = 1;
+  string password = 2;
+}
+
+message AuthorizateResponse {
+  string token = 1;
+  string refresh_token = 2;
+}
+
+message RefreshTokenRequest { string token = 1; }

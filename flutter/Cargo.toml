@@ -1,0 +1,24 @@
+[package]
+name = "avelio_sdk"
+version = "0.1.0"
+edition = "2021"
+build = "native/sdk/build.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+path = "native/sdk/src/lib.rs"
+
+
+[dependencies]
+anyhow = "1.0.47"
+fluent = "0.16.0"
+unic-langid = { version = "0.9.0", features = ["macros"] }
+sdk = { path = "/home/h/work/rust/audio-server/sdk" } # git = "https://gitlab.com/tokyjo/avelio-sdk"
+tokio = { version = "1.14.0", features = ["full"] }
+prost = "0.8.0"
+base64 = "0.13.0"
+
+[build-dependencies]
+cbindgen = "0.20.0"
+prost-build = "0.9.0"

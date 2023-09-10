@@ -1,0 +1,3 @@
+[submodule "native/sdk/src/proto"]
+	path = native/sdk/src/proto
+	url = https://gitlab.com/tokyjo/avelio-proto.git

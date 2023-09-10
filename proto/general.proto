@@ -1,0 +1,30 @@
+syntax = "proto3";
+package avelio.general;
+
+message Request {
+  repeated string errors = 1;
+  bool success = 2;
+  bytes data = 3;
+}
+
+message ProtoError {
+  ProtoErrorKind kind = 1;
+  optional string description = 2;
+}
+
+enum ProtoErrorKind { INTERNAL_ERROR = 0; }
+
+message Song {
+  string id = 12;
+  string title = 1;
+  string artist_name = 2;
+  string description = 3;
+  string header_image_thumbnail_url = 4;
+  string header_image_url = 5;
+  string genius_id = 6;
+  string recording_location = 7;
+  string release_date_for_display = 8;
+  string song_art_image_thumbnail_url = 9;
+  string album_cover_art_url = 10;
+  string album_name = 11;
+}
